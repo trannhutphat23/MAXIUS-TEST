@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useContext } from "react";
-import banner from "../../../public/banner-01.png";
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Aos from 'aos';
@@ -40,9 +39,11 @@ export default function PageOne() {
       <div className="w-full text-white overflow-hidden h-[100vh]">
         <div className="w-full h-auto">
           <Image
-            src={banner}
+            src="/banner-01.png"
             className="pointer-events-none w-screen h-[56.25vw] min-h-screen min-w-[177.77vh] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-none"
             alt="banner"
+            width={500}
+            height={500}
           />
           
           <div className="w-full h-full flex items-center justify-start">

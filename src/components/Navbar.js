@@ -16,6 +16,10 @@ const Navbar = () => {
 
     console.log("Current pathname:", pathname);
 
+    if (router.isFallback) {
+        return <div>Loading...</div>
+    }
+
     const handleClick = () => {
         setIsClick(!isClick);
     };

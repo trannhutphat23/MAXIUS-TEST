@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useContext } from 'react';
-import banner from "../../../public/banner-02.png";
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Aos from 'aos';
@@ -41,9 +40,11 @@ export default function PageTwo() {
       <div className="w-full overflow-hidden h-[100vh] flex justify-center">
         <div className="w-full h-auto">
           <Image
-            src={banner}
+            src="/banner-02.png"
             className="pointer-events-none w-screen h-[56.25vw] min-h-screen min-w-[177.77vh] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-none object-cover"
             alt="banner"
+            width={500}
+            height={500}
           />
           
           <div className="w-full h-full flex items-center justify-center">

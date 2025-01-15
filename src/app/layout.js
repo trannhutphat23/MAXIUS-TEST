@@ -3,7 +3,6 @@ import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
 import Navbar from "@/components/Navbar";
 import Logo from "@/components/Logo";
-import ContactUs from "./contact/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

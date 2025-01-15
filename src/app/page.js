@@ -7,7 +7,6 @@ import PageThree from '@/pages/PageThree/page';
 import PageFour from '@/pages/PageFour/page';
 import PageFive from '@/pages/PageFive/page';
 import { AppContext } from '@/context/AppContext';
-import Logo from '@/components/Logo';
 
 export default function Home() {
   const { currentPage, setCurrentPage, isClick } = useContext(AppContext);
