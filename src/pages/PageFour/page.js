@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import data from '@/data/dataPageFour';
 import "../../app/globals.css"
 import { useRef } from 'react';

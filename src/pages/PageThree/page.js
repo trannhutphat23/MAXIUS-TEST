@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { useState, useContext } from 'react';
 import { motion } from 'framer-motion';
 import sections from '@/data/dataPageThree';

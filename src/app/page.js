@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { useState, useContext, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PageOne from '@/pages/PageOne/page';

@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { useEffect, useContext } from 'react';
 import banner from "../../../public/banner-02.png";
 import Image from 'next/image';

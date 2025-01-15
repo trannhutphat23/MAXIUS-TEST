@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import banner from "../../../public/banner-05.png";
 import Image from 'next/image';
 import { FaRegEnvelope } from "react-icons/fa";
