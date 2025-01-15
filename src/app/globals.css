@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Geist', sans-serif;
+  overflow: hidden;
+}
+
+.scrollable {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.section-scroll::-webkit-scrollbar {
+  width: 0;
+}
+
+.section-scroll:hover::-webkit-scrollbar {
+  width: 1px;
+}
+
+.section-scroll::-webkit-scrollbar-thumb {
+  background-color: #848484;
+  border-radius: 10px;
+}
+
+.section-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.section-scroll:hover {
+  overflow-y: auto;
+}
+
+.scrollbar-visible {
+  overflow-y: auto;
+}
+
+h1, h2 {
+  color: #202c5c;
+}
+
+p, span {
+  color: #4B5563;
+}
