@@ -103,8 +103,9 @@ export default function Home() {
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
 
-    // Update URL on mount
-    window.history.replaceState(null, "", pages[currentPage].hash);
+    if (typeof window !== "undefined") {
+      window.history.replaceState(null, "", pages[currentPage]?.hash || "#");
+    }
 
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
@@ -113,7 +114,6 @@ export default function Home() {
 
   return (
     <div className="h-screen overflow-hidden" onWheel={handleWheel}>
-      <Logo />
       <AnimatePresence mode="wait" custom={currentPage}>
         <motion.div
           key={currentPage}
