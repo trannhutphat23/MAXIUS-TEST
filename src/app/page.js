@@ -40,8 +40,12 @@ export default function Home() {
   };
 
   const updatePage = (pageIndex) => {
-    setCurrentPage(pageIndex);
-    window.history.pushState(null, "", pages[pageIndex].hash);
+    if (pageIndex >= 0 && pageIndex < pages.length) {
+      setCurrentPage(pageIndex);
+      if (typeof window !== "undefined") {
+        window.history.pushState(null, "", pages[pageIndex].hash);
+      }
+    }
   };
 
   const NavigationBars = () => {
